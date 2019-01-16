@@ -7,7 +7,8 @@ var errorhandler = require('errorhandler');
 var http        = require('http');
 var path        = require('path');
 var request     = require('request');
-
+var routes      = require('./public/routes');
+var activity    = require('./public/routes/activity');
 
 var app = express();
 
@@ -20,8 +21,7 @@ app.use(bodyParser.raw({type: 'application/jwt'}));
 //app.use(express.favicon());
 
 app.use(express.static(path.join(__dirname, 'public')));
-var routes      = require(__dirname+'/public/routes');
-var activity    = require(__dirname+'/public/routes/activity');
+
 
 // Express in Development Mode
 if ('development' == app.get('env')) {
