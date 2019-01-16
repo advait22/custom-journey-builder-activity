@@ -20,8 +20,8 @@ app.use(bodyParser.raw({type: 'application/jwt'}));
 //app.use(express.favicon());
 
 app.use(express.static(path.join(__dirname, 'public')));
-var routes      = require(__dirname+'/routes');
-var activity    = require(__dirname+'/routes/activity');
+var routes      = require(__dirname+'/public/routes');
+var activity    = require(__dirname+'/public/routes/activity');
 
 // Express in Development Mode
 if ('development' == app.get('env')) {
