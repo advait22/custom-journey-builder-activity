@@ -1,0 +1,77 @@
+{
+  "workflowApiVersion": "1.1",
+  "metaData": {
+    "icon": "images/icon.png",
+    "iconSmall": "images/iconSmall.png",
+    "category": "message"
+  },
+  "type": "REST",
+  "lang": {
+    "en-US": {
+      "name": "Template",
+      "description": "A Template for a custom Journey Builder activity",
+      "step1Label": "Configure Activity"
+    }
+  },
+  "arguments": {
+    "execute": {
+      "inArguments": [
+        {
+          "emailAddress": "{{Contact.Attribute.CustomActivity.EmailAddress}}"
+        }
+      ],
+      "outArguments": [],
+      "url": "https://custom-journey-activity-ext.herokuapp.com/journeybuilder/execute",
+      "verb": "POST",
+      "body": "",
+      "header": "",
+      "format": "json",
+      "useJwt": true,
+      "timeout": 10000
+    }
+  },
+  "configurationArguments": {
+    "applicationExtensionKey": "rJHqVnvjYsQ5hLjvDV0x0Ib9Xr2hE5KG5mMI7QofycCNtFfOhJKuwcjjuToIHZrI3AEx5QOplvCmuE3ou_-ECGAgyz-WdNtE-sbScbR7XBjh8CI2RoRyG1Lv5BxIQ_IJ_J6nRamm9pJKD1jdQsm24h-hbj5SkGyqHtunDnszc5P3E-UbsLexYh87AtkOrc_e_Lefvoha8J_nr7egkrNeuH2cHrqqLZ3VmBIphUmB5I5JOUk7GbjCEAIR-lFTrg2",
+    "save": {
+      "url": "https://custom-journey-activity-ext.herokuapp.com/journeybuilder/save",
+      "verb": "POST",
+      "useJwt": true
+    },
+    "publish": {
+      "url": "https://custom-journey-activity-ext.herokuapp.com/journeybuilder/publish",
+      "verb": "POST",
+      "useJwt": true
+    },
+    "stop": {
+      "url": "https://custom-journey-activity-ext.herokuapp.com/journeybuilder/stop",
+      "verb": "POST",
+      "useJwt": true
+    },
+    "validate": {
+      "url": "https://custom-journey-activity-ext.herokuapp.com/journeybuilder/validate",
+      "verb": "POST",
+      "useJwt": true
+    }
+  },
+  "wizardSteps": [
+    {
+      "label": "Configure Activity",
+      "key": "step1"
+    }
+  ],
+  "userInterfaces": {
+    "configModal": {
+      "height": 400,
+      "width": 1000,
+      "fullscreen": false
+    }
+  },
+  "schema": {
+    "arguments": {
+      "execute": {
+        "inArguments": [],
+        "outArguments": []
+      }
+    }
+  }
+}
