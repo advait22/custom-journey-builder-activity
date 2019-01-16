@@ -2,19 +2,23 @@
   "name": "custom-jb-activity",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "node app.js"
+  "main": "app.js",
+  "directories": {
+    "lib": "lib"
   },
-  "keywords": [
-    "journey",
-    "builder",
-    "salesforce marketing cloud",
-    "heroku"
-  ],
-  "homepage": "https://github.com/advait22/custom-journey-builder-activity/blob/master/README.md",
-  "author": "Advait, Rushikesh",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/advait22/custom-journey-builder-activity.git"
+  },
+  "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/advait22/custom-journey-builder-activity/issues"
+  },
+  "homepage": "https://github.com/advait22/custom-journey-builder-activity#readme",
   "devDependencies": {
     "body-parser": "^1.18.3",
     "bower": "^1.8.4",
