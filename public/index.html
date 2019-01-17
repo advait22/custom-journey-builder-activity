@@ -10,14 +10,14 @@
       <script type="text/javascript" src="js/require.js"></script>
       <style>
          body {
-             padding: 20px;
-             margin: 0;
+         padding: 20px;
+         margin: 0;
          }
          .step {
-             display: none;
+         display: none;
          }
          #step1 {
-             display: block;
+         display: block;
          }
       </style>
       <script type="text/javascript">
@@ -37,8 +37,15 @@
    <body>
       <div id="step1" class="step">
          <div class="slds-grid">
-            <main class="slds-col">
-               <h1>welcome to your activity!</h1>
+            <main class="slds-col slds-size--1of-3 slds-p-horizontal--small">
+               <div class="slds-form slds-form_stacked">
+                  <div class="slds-form-element">
+                     <label class="slds-form-element__label" for="postcard-url">Image URL</label>
+                     <div class="slds-form-element__control">
+                        <input type="text" id="postcard-url" class="slds-input"/>
+                     </div>
+                  </div>
+               </div>
             </main>
          </div>
       </div>
