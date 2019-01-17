@@ -10,7 +10,6 @@ var request     = require('request');
 var routes      = require('./public/routes');
 var activity    = require('./public/routes/activity');
 var $ = require("jquery");
-require('./node_modules/@salesforce-ux/design-system/assets/styles/salesforce-lightning-design-system.css');
 
 var app = express();
 
